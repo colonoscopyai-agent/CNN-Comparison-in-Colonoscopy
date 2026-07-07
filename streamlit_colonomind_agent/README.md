@@ -1,5 +1,16 @@
 # 🧠 ColonoMind Diagnostic Agent
 
+**Open the training notebook in Google Colab:**
+
+[![Open In Colab — main](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/colonoscopyai-agent/CNN-Comparison-in-Colonoscopy/blob/main/streamlit_colonomind_agent/LIMUC_Train_and_Deploy.ipynb) &nbsp;`main`
+
+[![Open In Colab — branch](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/colonoscopyai-agent/CNN-Comparison-in-Colonoscopy/blob/claude/diagnostic-agent-streamlit-ig396o/streamlit_colonomind_agent/LIMUC_Train_and_Deploy.ipynb) &nbsp;`claude/diagnostic-agent-streamlit-ig396o`
+
+> If the **branch** badge errors (Colab can mis-parse branch names containing `/`),
+> use the **main** badge, or open via Colab → *File → Open notebook → GitHub* and
+> pick the branch from the dropdown. Private repo? Authorize Colab's GitHub
+> integration and enable *Include private repos* first.
+
 A Streamlit app that classifies a colonoscopy image into the **Mayo Endoscopic
 Subscore** classes `MES0–MES3` using one of five trained hybrid models
 (ResNet-50, DenseNet-121, EfficientNet-B4, ConvNeXt-Tiny, ViT-B/16).
