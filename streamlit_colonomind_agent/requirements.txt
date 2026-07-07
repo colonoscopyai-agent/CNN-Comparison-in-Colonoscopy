@@ -1,0 +1,32 @@
+# ColonoMind Diagnostic Agent — Streamlit Community Cloud dependencies
+#
+# IMPORTANT: the .weights.h5 files and preprocess_artifacts.joblib were created
+# in your TRAINING environment. To avoid unpickling warnings / weight-loading
+# errors, pin tensorflow, scikit-learn, umap-learn and numpy to the SAME
+# versions you trained with. Check them in your training notebook:
+#     import tensorflow, sklearn, umap, numpy
+#     print(tensorflow.__version__, sklearn.__version__, umap.__version__, numpy.__version__)
+# then edit the pins below to match.
+
+streamlit==1.37.1
+
+# Deep learning (CPU build keeps the image small; numpy<2 is required by TF 2.15)
+tensorflow-cpu==2.15.1
+transformers==4.41.2          # only needed for the ViT-B-16 model
+numpy==1.26.4
+
+# Classic ML / preprocessing (must match training for the pickled objects)
+scikit-learn==1.4.2
+umap-learn==0.5.6
+pandas==2.2.2
+scipy==1.13.1
+joblib==1.4.2
+
+# Image + handcrafted-feature extraction
+opencv-python-headless==4.10.0.84   # headless => no libGL system package needed
+scikit-image==0.23.2
+PyWavelets==1.6.0
+Pillow==10.4.0
+
+# Optional: uncomment to enable the Claude-powered Q&A toggle
+# anthropic==0.34.2
